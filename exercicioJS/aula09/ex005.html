@@ -14,16 +14,28 @@
 </head>
 <body>
     <h1>Iniciando os estudos com DOM</h1>
-    <p>aqui vai o resultado</p>
+    <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div>Clique aqui</div>
+    <p>Terceiro resultado</p>
+    <div id="msg">Clique aqui</div>
+    <div class="cll">Clique aqui 02</div>
      
     <script>
          var corpo = window.document.body
-         var p1 = window.document.getElementsByTagName('p')[1]
 
-         document.write(p1.innerHTML)
-         document.write(p0.innerHTML)
+         var p1 = window.document.getElementsByTagName('p')[1]
+         window.document.write('Esta ecrito assim: ' + p1.innerText)
+
+         var d = window.document.getElementById('msg')
+         d.style.background = 'green'
+         d.innerText = 'Era clique aqui'
+
+         var cl = window.document.getElementsByClassName('div')[1]
+         write(cl.innerText)
+         
+         
+         
+
     </script>
 </body>
 </html>
