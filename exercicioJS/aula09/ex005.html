@@ -16,22 +16,24 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <p>Terceiro resultado</p>
     <div id="msg">Clique aqui</div>
-    <div class="cll">Clique aqui 02</div>
-     
     <script>
          var corpo = window.document.body
-
          var p1 = window.document.getElementsByTagName('p')[1]
-         window.document.write('Esta ecrito assim: ' + p1.innerText)
 
-         var d = window.document.getElementById('msg')
+         //window.document.write('Esta ecrito assim: ' + p1.innerText)
+
+         /*var d = window.document.getElementById('msg')
          d.style.background = 'green'
          d.innerText = 'Era clique aqui'
 
-         var cl = window.document.getElementsByClassName('div')[1]
-         write(cl.innerText)
+         var d = window.document.querySelector('div.msg')
+         d.style.background= 'blue'*/
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        d.style.color = 'black'
+        
          
          
          
