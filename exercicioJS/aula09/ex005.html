@@ -17,26 +17,11 @@
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
     <div id="msg">Clique aqui</div>
+
     <script>
-         var corpo = window.document.body
-         var p1 = window.document.getElementsByTagName('p')[1]
-
-         //window.document.write('Esta ecrito assim: ' + p1.innerText)
-
-         /*var d = window.document.getElementById('msg')
+         var d = document.querySelector('#msg')
          d.style.background = 'green'
-         d.innerText = 'Era clique aqui'
-
-         var d = window.document.querySelector('div.msg')
-         d.style.background= 'blue'*/
-        
-        var d = window.document.querySelector('div#msg')
-        d.style.background = 'blue'
-        d.style.color = 'black'
-        
-         
-         
-         
+         d.style.color = 'blue'
 
     </script>
 </body>
