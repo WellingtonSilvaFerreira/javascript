@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual pais</title>
+</head>
+<body>
+    <h1>Qual o seu país?</h1>
+    <label for="pais"> Digite seu país:</label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" name="ver" id="ver" value="Verificar" onclick="verificar()">
+    <div id="result"></div>
+
+    <script>
+        function verificar(){
+            var pa = document.querySelector('input#pais')
+            var result = document.querySelector('input#result')
+            res.innerHTML = `Seu país é ${pa}`
+        }
+    </script>
+    
+</body>
+</html>
