@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual pais</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(190, 121, 30, 0.493);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            width: 420px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 15px;
+            text-align: center;
+            background-color: rgba(165, 42, 42, 0.329);
+        }
+        h1{
+            font-size: 2.5rem;
+            color: azure;
+            text-shadow: 1px 1px 1px rgb(216, 230, 230);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main class="main">
+        <h1>Qual o seu país?</h1>
+       
+        <input type="text" name="pais" id="pais" placeholder="Digite seu país">
+        <input type="button" name="ver" value="Verificar" onclick="verificar()">
+        <div id="result"></div>
+    </main>
+
+    <script>
+        
+        function verificar(){
+           var country = document.querySelector('input#pais')
+           var result = document.querySelector('#result')
+           var salvar = (country.value)
+           result.innerHTML = `<p>Seu país é o <strong>${salvar}</strong></p>`
+
+           if(salvar == 'Brasil'){
+            result.innerHTML += `<p>Você é brasileiro</p>`
+            }else{
+                result.innerHTML += `<p>Você é estrangeiro</p>`
+                result.innerHTML += `<p>Bem vindo</p>`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
