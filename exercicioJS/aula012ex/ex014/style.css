@@ -1,11 +1,16 @@
 body{
-    background-color: rgb(107, 132, 241);
+    background-color: rgb(105, 161, 245);
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 2px #ffffffa6;
+    
+}
+
+#msg{
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 section{
     background-color: #fff;
@@ -14,7 +19,20 @@ section{
     padding: 15px;
     box-shadow: 4px 4px 10px black;
     margin: auto;
+    
 }
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
 footer{
     text-align: center;
     color: #fff;
