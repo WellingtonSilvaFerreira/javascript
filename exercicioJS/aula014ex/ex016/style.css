@@ -15,6 +15,12 @@ section{
     box-shadow: 4px 4px 10px black;
     margin: auto;
 }
+section div{
+    padding: 8px;
+}
+section label{
+    font-weight: bold;
+}
 footer{
     text-align: center;
     color: #fff;
