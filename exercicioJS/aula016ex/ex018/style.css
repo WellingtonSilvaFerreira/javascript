@@ -15,6 +15,9 @@ section{
     box-shadow: 4px 4px 10px black;
     margin: auto;
 }
+select#flista{
+    width: 150px;
+}
 footer{
     text-align: center;
     color: #fff;
